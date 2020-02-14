@@ -35,10 +35,28 @@ string getOccupationName(){
     cout << "Press enter to roll the dice to determine your first name.";
     getline(cin, dummy);
     resultDice = rollDice(4);
+	/*
     if (resultDice == 1){ first_name = entry2_15; }
     else if (resultDice == 2){ first_name = entry2_6; }
     else if (resultDice == 3){ first_name = entry2_13; }
     else if (resultDice == 4){ first_name = entry3_16; }
+	*/
+	switch (resultDice) {
+		case 1:
+			first_name = entry2_15;
+			break;
+		case 2:
+			first_name = entry2_6;
+			break;
+		case 3:
+			first_name = entry2_13;
+			break;
+		case 4:
+			first_name = entry3_16;
+			break;
+		default:
+			break;
+	}
     if (man_condition == true){ last_name = last_name + "man"; }
     if (condition_condition == true){ first_name = condition_condition_type + " " + first_name; }
     result = first_name + " " + last_name;
@@ -51,10 +69,28 @@ string getHornyName(){
     cout << "Press enter to roll the dice to determine your first name.";
     getline(cin, dummy);
     resultDice = rollDice(4);
+	/*
     if (resultDice == 1){ first_name = entry2_12; }
     else if (resultDice == 2){ first_name = "Naked"; }
     else if (resultDice == 3){ first_name = entry2_6; }
     else if (resultDice == 4){ first_name = entry2_14; }
+	*/
+	switch (resultDice) {
+		case 1:
+			first_name = entry2_12;
+			break;
+		case 2:
+			first_name = "Naked";
+			break;
+		case 3:
+			first_name = entry2_6;
+			break;
+		case 4:
+			first_name = entry2_14;
+			break;
+		default:
+			break;
+	}
     cout << "If you feel like it, your middle name can be 'Lickable'. I won't stop you." << endl;
     cout << "Type 'ok' or 'no god please no'." << endl;
     getline(cin, lick);
@@ -72,10 +108,28 @@ string getTheName(){
     cout << "Press enter to roll the dice to determine your last name.";
     getline(cin, dummy);
     resultDice = rollDice(4);
+	/*
     if (resultDice == 1){ last_name = entry2_8; }
     else if (resultDice == 2){ last_name = entry2_9; }
     else if (resultDice == 3){ last_name = entry2_4; }
     else if (resultDice == 4){ last_name = entry3_20; }
+	*/
+	switch (resultDice) {
+		case 1:
+			last_name = entry2_8;
+			break;
+		case 2:
+			last_name = entry2_9;
+			break;
+		case 3:
+			last_name = entry2_4;
+			break;
+		case 4:
+			last_name = entry3_20;
+			break;
+		default:
+			break;
+	}
     if (man_condition == true){ last_name = last_name + "man"; }
     if (condition_condition == true){ first_name = first_name + " " + condition_condition_type; }
     result = first_name + " " + last_name;
@@ -88,12 +142,36 @@ string getCoolName(){
     cout << "Press enter to roll the dice to determine your last name.";
     getline(cin, dummy);
     resultDice = rollDice(6);
+	/*
     if (resultDice == 1){ last_name = entry3_17; }
     else if (resultDice == 2){ last_name = entry3_18; }
     else if (resultDice == 3){ last_name = entry3_19; }
     else if (resultDice == 4){ last_name = entry2_6; }
     else if (resultDice == 5){ last_name = entry2_8; }
     else if (resultDice == 6){ last_name = entry2_13; }
+	*/
+	switch (resultDice) {
+		case 1:
+			last_name = entry3_17;
+			break;
+		case 2:
+			last_name = entry3_18;
+			break;
+		case 3:
+			last_name = entry3_19;
+			break;
+		case 4:
+			last_name = entry2_6;
+			break;
+		case 5:
+			last_name = entry2_8;
+			break;
+		case 6:
+			last_name = entry2_13;
+			break;
+		default:
+			break;
+	}
     if (man_condition == true){ last_name = last_name + "man"; }
     if (condition_condition == true){ first_name = condition_condition_type + " " + first_name; }
     result = first_name + " " + last_name;
@@ -106,10 +184,28 @@ string getViolentName(){
     cout << "Press enter to roll the dice to determine your first name.";
     getline(cin, dummy);
     resultDice = rollDice(4);
+	/*
     if (resultDice == 1){ first_name = entry3_19; }
     else if (resultDice == 2){ first_name = entry2_12; }
     else if (resultDice == 3){ first_name = entry3_20; }
     else if (resultDice == 4){ first_name = entry2_9; }
+	*/
+	switch (resultDice) {
+		case 1:
+			first_name = entry3_19;
+			break;
+		case 2:
+			first_name = entry2_12;
+			break;
+		case 3:
+			first_name = entry3_20;
+			break;
+		case 4:
+			first_name = entry2_9;
+			break;
+		default:
+			break;
+	}
     if (man_condition == true){ last_name = last_name + "man"; }
     if (condition_condition == true){ first_name = condition_condition_type + " " + first_name; }
     result = first_name + " " + last_name;
